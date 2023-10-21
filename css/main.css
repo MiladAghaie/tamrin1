@@ -1,0 +1,6 @@
+@import"./setting.css";
+@import"./swiper.css";
+@import"./products.css";
+@import"./mobile.css" only screen and (min-width:350px) and (max-width:768px); /* Mobile First */
+@import"./tablet.css" only screen and (min-width:768px) and (max-width:1000px);
+@import"./pc.css" only screen and (min-width:1000px);

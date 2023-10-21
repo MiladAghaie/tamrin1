@@ -1,0 +1,121 @@
+.menu{
+    width: 100%;
+    background-color: #00261C;
+    overflow: hidden;
+}
+.menu nav{
+    width: inherit;
+    height: inherit;
+}
+.menu nav ul{
+    padding: unset;
+    width: inherit;
+    height: inherit;
+    background-color: #044D29;
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+    flex-flow: column wrap;
+}
+.menu nav ul li{
+    display: inline-block;
+    height: inherit;
+    position: relative;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: whitesmoke;
+    line-height: 40px;
+    display: inline-block;
+    height: inherit;
+    padding: 0 10px;
+}
+.menu nav ul li .submenu{
+    position: absolute;
+    left:  100%;
+    display: flex;
+    flex-flow: column wrap;
+    transform: translateX(50%);
+    transition: 200ms;
+    top: 0;
+
+}
+.menu nav ul li .submenu ul{
+    display: inline-block;
+    perspective: 800px;
+    background-color: transparent;
+}
+.menu nav ul li .submenu ul li:nth-of-type(1){
+    background-color: #45BF55;
+     animation: animation1 2s 1; 
+
+}
+.menu nav ul li .submenu ul li:nth-of-type(2){
+    background-color:#45BF55;
+    animation: animation1 2s 1; 
+    animation-delay: 250ms;
+}
+.menu nav ul li .submenu ul li:nth-of-type(3){
+    background-color: #45BF55;
+    animation: animation1 2s 1; 
+    animation-delay: 500ms;
+}
+.menu nav ul li .submenu ul li:nth-of-type(4){
+    background-color: #45BF55;
+    animation: animation1 2s 1; 
+    animation-delay: 750ms;
+}
+.menu nav ul li:hover{
+    background-color: #168039;
+}
+.menu nav ul li:hover a{
+    text-shadow: 0px 0px 5px black,0px 0px 5px red;
+}
+.menu nav ul li:hover .submenu{
+    left:  0;
+}
+.menu nav ul li:hover .submenu ul li:hover{
+    background-color: #96ED89;
+}
+.products{
+    width: 100%;
+    /* height: fit-content; */
+    display: flex;
+    background-color: gray;
+    column-gap: 10px;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.products .product{
+    width: 90%;
+    padding: 20px;
+    height: auto;
+}
+.products .product h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: whitesmoke;
+}
+.products .product img{
+    width: 100%;
+    margin: 10px 0;
+    object-fit: contain;
+}
+.products .product p{
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+    color: gold;
+}
+.products .product a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border-radius: 32px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
